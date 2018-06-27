@@ -18,4 +18,6 @@ headers = {'Host': 'livetvstream.in',
 'Cache-Control': 'max-age=0'}
 r = requests.post(url,  headers=headers)
 print(r.content)
-
+o =open("jio.txt","w")
+o.write(r)
+o.close()
